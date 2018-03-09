@@ -1,0 +1,23 @@
+<html>
+<head>
+
+ <script type = "text/javascript" 
+ src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+ </script>
+
+</head>
+<body ng-app="myApp" ng-controller="myctrl">
+
+<h1>{{price|currency}}</h1>
+
+
+<script>
+var app=angular.module("myApp",[]);
+app.controller("myctrl",function($scope)
+{
+$scope.price=50;
+
+});
+</script>
+</body>
+</html>
